@@ -5,7 +5,13 @@ class Bunny {
         this.strength = floor(random(1,6));
         this.infected = false;
 
-        this.faceCol = color(255,255,255); 
+        let choice = floor(random(0,4));
+        switch(choice) {
+            case 0: this.faceCol = color(250,250,250); break;
+            case 1: this.faceCol = color(140,140,140); break;
+            case 2: this.faceCol = color(139,122, 94); break;
+            case 3: this.faceCol = color(106, 86, 10); break;
+        }
         this.noseCol = color(255,100,100);
         this.textCol = color(255,100,100);
 
@@ -17,6 +23,9 @@ class Bunny {
 
     infect() {
         this.infected = true;
+    }
+
+    toInfectColor() {
         this.faceCol = color(49, 142, 0);
         this.noseCol = color(40,102,7);
         this.textCol = color(255,255,255);

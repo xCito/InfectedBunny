@@ -9,7 +9,7 @@ let interval;
 let done = false;
 
 function setup() {
-    let canvas = createCanvas(800, 600);
+    let canvas = createCanvas(900, 600);
     canvas.parent('canvas-holder');
     background(50);
 
@@ -90,11 +90,11 @@ function restart() {
     let timer = parseInt(document.getElementById("inputSec").value);
     console.log("reset");
     ROWS = floor(random(5,15));
-    COLS = floor(random(5,12));
+    COLS = floor(random(5,15));
     bunnys = [];
     queue.queue = [];
     stats.totalInfected = 0;
-    queue.lerpSpeed = timer/10000;
+    //queue.lerpSpeed = timer/10000;
     console.log(queue.lerpSpeed);
 
     for(let i=0; i<ROWS; i++) {
