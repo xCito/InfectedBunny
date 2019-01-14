@@ -4,3 +4,6 @@ Simulates a spreading infection amongst bunnies. Every bunny has an immunization
  _(inspired from google foobar challenge)._
 
  <img src="media/bunnyInfection.gif">
+
+
+ _The line of bunnies on the right side of the screenshot is a representation of the datastructure I chose to use to make this possible._
